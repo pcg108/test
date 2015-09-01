@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<link href="page1.css" rel="stylesheet">
+	<body>
+	
+		<div class = "Headings">
+			<h1>Tutorial 1</h1>
+		</div>
+		
+		<div class = "video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Rj0V-l2LLX0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+		<div class = "Headings">
+			<h1>Key Points</h1>
+		</div>
+		
+		<div class = "Notes">
+			<div>
+				<ul>
+					<li>All tutorials will have a summary of the key points mentioned in the video.</li>
+					<li>C is one of the most powerful and widely used computer programming languages.</li>
+					<li>It is a low-level language, which means that there is less abstraction. You can deal more directly with the processes and memory of the computer.</li>
+					<li>Many other programming languages, such as Java and C++ are developed from C, so learning C makes it easier to learn these and many other languages.</li>
+					<li>Notepad++ is a text-editor we will use to write our C programs. It is similar to text-editors like Notepad, but helps makes our code easier to structure and read.</li>
+					<li>Most all programming languages require a compiler, which takes the code we write and generates the machine-language code that the computer uses.</li>
+					<li>MinGW is a popular C compiler. To install:
+						<ul>
+							<li>Download MinGW Installer from website.</li>
+							<li>Run the setup file and click "continue" until you reach the MinGW Installation Manager.</li>
+							<li>In the Installation Manager, select "All Packages" and find the mingw32-gcc option.</li>
+							<li>Right-click and select "mark for installation". Click "Installation" on the top menu, and select "apply changes", and apply.</li>
+							<li>Open your file explorer, navigate to the C:\MinGW\bin folder (which is the default, but if you installed it in another folder, navigate there), and find a file named "gcc.exe".</li>
+							<li>Right-click on the file, select "Properties", and copy the location of the file.</li>
+							<li>Find "PC Info" on your computer. Click on the "Advanced System Settings" option. Select "Environment Variables".</li>
+							<li>Under "System Variables", find the Path variable. Click it, and then click "Edit...".</li>
+							<li>Insert a semicolon at the end of the line, WITHOUT CHANGING ANYTHING ALREADY THERE. Paste the location you copied earlier after the semicolon.</li>
+							<li>Open the Command Prompt on your computer. Type "gcc", and press Enter. If a message appears containing a message with the words "fatal error", the compiler has been installed successfully.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class = "Headings">
+			<h1>Quiz</h1>
+		</div>
+		<div>
+			<ul>
+				<li>All tutorials will have a quiz over the material from the lesson.</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
