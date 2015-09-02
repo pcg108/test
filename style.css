@@ -3,6 +3,10 @@ body {
 	font-size: 16px
 }
 
+body {
+    background-color: white;
+}
+
 .Headings{
 	text-align: center
 }
