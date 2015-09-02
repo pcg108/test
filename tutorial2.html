@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+
+<link href="page1.css" rel="stylesheet">
+	<body>
+	
+		<div class = "Headings">
+			<h1>Tutorial 2</h1>
+		</div>
+		
+		<div class = "videoContainer">
+			<iframe src="https://www.youtube.com/embed/h85oUqff5Go" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+		</div>
+		
+		<div class = "Headings">
+			<h1>Key Points</h1>
+		</div>
+		
+		<div class = "Notes">
+			<div>
+				<p>After watching the video, consider the following key points:</p>
+				<ul>
+					<li>C Programs always begin with the Preprocessor directives, which give the pre-processor (which makes minor modifications to the program before handing it to the compiler) certain information it needs to understand the rest of the program.</li>
+						<ul>
+							<li>Preprocessor directives always begin with the # symbol.</li>
+							<li>In this lesson, we discussed the #include directive, which we generally use to "include" the information in certain libraries into our program:</li>
+								<ul>
+									<li>A library is a file that defines certain functions and features that we use in the program. In this case, we used the stdio.h library.</li>
+									<li>To include a library, use #include <stdio.h>. To use another library, like the stdlib library, use #include <stdlib.h>, and so on.</li>
+								</ul>
+						</ul>
+					<li>C Programs are composed of functions, which are groups of statements.</li>
+						<ul>
+							<li>The "main" function is required in every C program. The first thing the compiler looks for after getting the program from the preprocessor is the main function.</li>
+							<li>Functions always have the form:</li>
+								<ul>
+									<li>return-type name() { statements }</li>
+								</ul>
+							<li>Most functions will return (give back) a certain value to whatever called it. In the case of the main() function, the compiler is the one that calls it, so main() will return a value to the compiler</li>
+								<ul>
+									<li>Functions do not necessarily have to return a value, so in that case, the return-type will be void.</li>
+									<li>main() always returns an integer to the compiler.</li>
+								</ul>
+							<li>The name of the main() function is, obviously, "main". Functions can be named with any mix of letters, numbers, and underscores (_), but must begin with a letter or underscore. The name is followed by a pair of parenthesis, which we will discuss later.</li>
+							<li>The parenthesis are followed by a pair of curly braces { }, in which the statements go.</li>
+						</ul>
+					<li>The statements are the lowest level of our heirarchy. You can think of them as the lines that actually perform tasks in our program.</li>
+						<ul>
+							<li>Statements always end with semicolons ( ; ).  Think of semicolons as periods at the end of a sentence.</li>
+							<li>We learned how to print things out (like "Hello, World"), with the following statement:</li>
+								<ul>
+									<li>printf("Hello World");</li>
+									<li>This displays whatever you put inside of the quotation marks.</li>
+								</ul>
+							<li>We also learned about the return statement. Recall that the main() function returns a value to the compiler. This is the line where we actually return that value.</li>
+							<li>In most cases, we always return the value 0 in main(), which is interpreted by the compiler as a sign that the program compiled properly. We do this with:</li>
+								<ul>
+									<li>return 0;</li>
+								</ul>
+						</ul>
+					<li>Lastly, we learned how to compile and run programs, as well as how we will use Command Prompt.</li>
+						<ul>
+							<li>?Think of Command Prompt, for our purposes, as a kind of text-based file explorer. We navigate to different folders by using the "cd" command, followed by the folder. For example, "cd Desktop".</li>
+							<li>If we want to navigate to a certain folder that is inside of the folder we are already in, we can just use "cd folder-name". Otherwise, we can use "cd entire-path-to-folder"</li>
+							<li>To C programs from command prompt, first make sure that you are in the folder in which your file is located. Then type:</li>
+								<ul>
+									<li>gcc program-name.c -o executable-name</li>
+									<li>"gcc" calls the C compiler to compile the "program-name.c file". It compiles is into an object file (machine code file) with the command "-o", and turns that into an executable with the name "executable-name.exe"</li>
+									<li>We can then run the executable by simply typing "executable-name" in Command Prompt (making sure that we are in the folder of the executable)</li>
+								</ul>
+						</ul>
+				</ul>
+			</div>
+		</div>
+		
+		<div class = "Headings">
+			<h1>Quiz</h1>
+		</div>
+		
+		<div>
+			<p>Consider the following incomplete C program. Think about what should be in the blanks, and then take the quiz.</p>
+		</div>
+		
+		<div>
+			<p>#___1___ <stdio.h></p>
+			<p>_2_  main() {</p>
+			<p style="text-indent: 5em;">__3__("Hello World");</p>
+			<p style="text-indent: 5em;">return _4_;</p>
+			<p>}</p>
+		</div>
+		
+	</body>
+</html>
